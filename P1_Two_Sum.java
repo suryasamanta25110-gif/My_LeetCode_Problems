@@ -7,8 +7,6 @@ public class P1_Two_Sum {
         HashMap<Integer, Integer> map = new HashMap<>();
 
         // Running loop to find the required indexes.
-        // If the required pair of a number is not found in the map, the number is added in the map.
-        // If found, then the index of the pairs is returned.
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i]))
                 return new int[] {map.get(target - nums[i]), i};

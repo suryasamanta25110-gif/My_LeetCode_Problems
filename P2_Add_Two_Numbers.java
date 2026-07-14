@@ -14,9 +14,6 @@ public class P2_Add_Two_Numbers {
         int carry = 0;
 
         // Finding the sum.
-        // At each step, we check whether 'l1' and 'l2' is null or not. If not, we add the digits.
-        // We update the 'sum' and 'carry' accordingly.
-        // If it's the first node, we initialize 'head', or else, we initialize 'temp.next'.
         while (l1 != null || l2 != null || carry != 0) {
             int sum = 0;
             if (l1 != null) {

@@ -29,9 +29,6 @@ public class P47_Permutations_II {
         }
 
         // Finding the list of unique permutations.
-        // We ignore the case when we encounter the element which is similar to another element and not being used.
-        // For example, for input [1, 1, 2], in the first case, nums[0] is being used. So nums[1] is also being used.
-        // In the second case, nums[0] is no more used, and nums[0] == nums[1]. So we skip this.
         for (int i = 0; i < nums.length; i++) {
             if (used[i] || (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]))
                 continue;
